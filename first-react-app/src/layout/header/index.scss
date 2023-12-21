@@ -1,0 +1,38 @@
+
+header {
+    height: 70px;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+    
+    
+    .header {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            color: darkblue;
+        }
+        nav {
+            ul {
+                display: flex;
+                gap: 30px;
+                li {
+                    a{
+                        padding: 10px 20px;
+                        &:hover {
+                            padding: 10px 20px;
+                        border-radius: 25px;
+                        background-color: darkblue;
+                        color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}
