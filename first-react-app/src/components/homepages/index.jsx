@@ -21,6 +21,47 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section id="services">
+        <div className="container">
+          <div className="services">
+            <div className="ourservices">
+            <h2>Our Services</h2>
+            </div>
+            <div className="boxes">
+              <div className="box">
+                <img className="boximg" src="./src/assets/images/Electric-Circuits.jpg" alt="" />
+                <h3>Lorem Ipsum</h3>
+                <p>There are many variations of passegaes of <br /> Lorem Ipsum available</p>
+              </div>
+              <div className="box">
+              <img className="boximg" src="./src/assets/images/Electric-Circuits.jpg" alt="" />
+
+                <h3>Lorem Ipsum</h3>
+                <p>There are many variations of passegaes of <br /> Lorem Ipsum available</p>
+              </div>
+              <div className="box">
+              <img className="boximg" src="./src/assets/images/Electric-Circuits.jpg" alt="" />
+                <h3>Lorem Ipsum</h3>
+                <p>There are many variations of passegaes of <br /> Lorem Ipsum available</p>
+              </div>
+              <div className="box">
+              <img className="boximg" src="./src/assets/images/Electric-Circuits.jpg" alt="" />
+                <h3>Lorem Ipsum</h3>
+                <p>There are many variations of passegaes of <br /> Lorem Ipsum available</p>
+              </div>
+              <div className="box">
+              <img className="boximg" src="./src/assets/images/Electric-Circuits.jpg" alt="" />
+                <h3>Lorem Ipsum</h3>
+                <p>There are many variations of passegaes of <br /> Lorem Ipsum available</p>
+              </div>
+             
+            </div>
+            <div className="buttondiv"> <button className="readmore">Read More
+              </button></div>
+
+          </div>
+        </div>
+      </section>
     </React.Fragment>
   );
 };
