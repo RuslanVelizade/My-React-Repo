@@ -1,0 +1,13 @@
+#home {
+    height: 50vh;
+    .container {
+        height: 100%;
+        .home {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgoldenrod;
+        }
+    }
+}
