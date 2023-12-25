@@ -1,0 +1,132 @@
+#services {
+    width: 100%;
+    #services-top {
+        background-color: #f7f7f7;
+        height: 100vh;
+        .container {
+            height: 100%;
+            .services-top {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                
+                padding: 50px 0;
+                .borderdiv {
+                    display: flex;
+                    span {
+                        // &::before {
+                        //     position: absolute;
+                        //     content: "";
+                        //     width: 54px;
+                        //     height: 2px;
+                        //     background: #eb566c;
+                        //     top: 0;
+                        //     left: 0px;
+                        //     top: 50%;
+                        //     transform: translateY(-50%);
+                        // }
+                    }
+                    p {
+                        color: #eb566c;
+                    }
+                       
+                }
+                h1 {
+                    font-size: 50px;
+                    color: #0d2d3e;
+                }
+                .boxes {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 30px;
+                    padding: 40px 0;
+                    .box {
+                        text-align: center;
+                        padding: 30px;
+                        background-color: white;
+                        width: 30%;
+                            .boxicon {
+                                color: #eb566c;
+                                font-size: 90px;
+                                padding: 20px;
+                            }
+                            h5 {
+                                font-size: 30px;
+                                color: #0d2d3e;
+                                padding: 20px;
+                            }
+                            .there {
+                                
+                                padding: 10px;
+                                font-size: 18px;
+                                color: #1d5b7c;
+                                padding-bottom: 20px;
+                            }
+                                    }
+            }
+        }
+    }
+    }
+    #services-bottom {
+        background-image: url("./src/assets/images/section_bg02.jpg");
+        height: 110vh;
+        background-position: center;
+        
+        .container {
+            height: 100%;
+            .services-bottom {
+                height: 100%;
+                   display: flex;
+                   align-items: center;
+                  padding: 5% 0;
+                  gap: 50px;
+                 
+                   .services-bottom-left {
+                    display: flex;
+                    width: 50%;
+                    .about {
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                   }
+                 
+                        
+                         .services-bottom-right {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+                            color: white;
+                            gap: 20px;
+                            h1 {
+                                font-size: 50px;
+                                padding-bottom: 30px;
+                            }
+                            h6 {
+                                font-size: 20px;
+                            }
+                            p {
+                                font-size: 18px;
+                                padding-bottom: 20px;
+                                color: #cecece;
+                            }
+                            a {
+                                padding: 20px;
+                                background-color: #ff2143;
+                                color: white;
+                                width: max-content;
+                                transition: background-color 0.3s ease, color 0.3s ease;
+                                &:hover {
+                                    background-color: #f7f7f7;
+                                    color: black;
+                                    
+                                }
+                            }
+                         }
+
+            }
+        }
+    }
+}

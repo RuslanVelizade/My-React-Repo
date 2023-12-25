@@ -1,0 +1,34 @@
+footer {
+  background-color: black;
+  height: 150px;
+}
+footer .container {
+  height: 100%;
+}
+footer .container .footer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .footer .left p {
+  color: white;
+}
+footer .container .footer .left p .heart {
+  color: red;
+}
+footer .container .footer .left p span {
+  color: red;
+}
+footer .container .footer .right {
+  color: #bdbdbd;
+  display: flex;
+  gap: 20px;
+}
+footer .container .footer .right .social {
+  transition: all 0.3s;
+}
+footer .container .footer .right .social:hover {
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

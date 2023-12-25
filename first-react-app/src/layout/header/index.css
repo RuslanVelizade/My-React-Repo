@@ -1,0 +1,32 @@
+header {
+  height: 70px;
+}
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+header .container .header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header h1 {
+  color: darkblue;
+}
+header .container .header nav ul {
+  display: flex;
+  gap: 30px;
+}
+header .container .header nav ul li a {
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+header .container .header nav ul li a:hover {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: darkblue;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

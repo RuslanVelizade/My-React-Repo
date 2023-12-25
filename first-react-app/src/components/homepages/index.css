@@ -1,0 +1,64 @@
+#home .container .home {
+  padding: 30px 0;
+  display: flex;
+}
+#home .container .home h1 {
+  width: 50%;
+  font-size: 3rem;
+}
+#home .container .home .home-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+#home .container .home .home-left button {
+  padding: 10px 30px;
+  background-color: darkblue;
+  width: 150px;
+  color: white;
+  border-radius: 25px;
+  border: none;
+}
+#home .container .home .home-right img {
+  border-radius: 50%;
+  border: 6px solid darkblue;
+}
+
+#services .container .services .ourservices {
+  text-align: center;
+}
+#services .container .services .boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 50px 0;
+}
+#services .container .services .boxes .box {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#services .container .services .boxes .box .boximg {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+}
+#services .container .services .buttondiv {
+  text-align: center;
+}
+#services .container .services .buttondiv button {
+  padding: 10px 30px;
+  background-color: darkblue;
+  width: 150px;
+  color: white;
+  border-radius: 25px;
+  border: none;
+}/*# sourceMappingURL=index.css.map */

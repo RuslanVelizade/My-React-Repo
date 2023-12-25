@@ -1,0 +1,47 @@
+header #header-top {
+  background-color: #0d2d3e;
+}
+header #header-top .container .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 60px;
+}
+header #header-top .container .header-top .box {
+  display: flex;
+  gap: 30px;
+}
+header #header-top .container .header-top .box .hour {
+  color: #e94d65;
+}
+header #header-top .container .header-top .box .social {
+  transition: color 0.3s;
+  transition: ease 0.3s;
+}
+header #header-top .container .header-top .box .social:hover {
+  transform: scaleX(-1);
+  color: #ff2143;
+}
+header #header-top .container .header-top .box #plus {
+  font-size: 20px;
+}
+header #header-top .container .header-top .box p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header #header-bottom .container .header-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+header #header-bottom .container .header-bottom nav ul {
+  display: flex;
+  gap: 40px;
+}
+header #header-bottom .container .header-bottom nav ul li a {
+  color: #0d2d3e;
+  font-size: 18px;
+}/*# sourceMappingURL=index.css.map */
