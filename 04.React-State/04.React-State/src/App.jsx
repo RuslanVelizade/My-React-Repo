@@ -6,9 +6,9 @@ function App() {
   const [inputValue, setInputValue] = useState(0);
   return (
     <>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button className="inc" onClick={() => setCount(count + 1)}>Increment</button>
       <h1>{count}</h1>
-      <button onClick={() => setCount(count - 1)}>decrement</button>
+      <button className="dec" onClick={() => setCount(count - 1)}>Decrement</button>
 
       <br />
       <hr />

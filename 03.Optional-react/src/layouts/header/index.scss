@@ -1,65 +1,101 @@
 header {
-            #header-top {
+  #header-top {
+    background-color: #0d2d3e;
+    .container {
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        height: 60px;
+        .box {
+          display: flex;
+          gap: 30px;
+          .hour {
+            color: #e94d65;
+          }
+          .social {
+            transition: color 0.3s;
+            transition: ease 0.3s;
+            &:hover {
+              transform: scaleX(-1);
+              color: #ff2143;
+              cursor: pointer;
+            }
+          }
+          #plus {
+            font-size: 20px;
+          }
+          p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #header-bottom {
+    .container {
+      .header-bottom {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        align-items: center;
+
+        nav {
+          ul {
+            display: flex;
+            gap: 40px;
+            li {
+              transition: visibility 0.9s ease;
+              opacity: 1;
+                visibility: visible;
+            //   &:hover .hover-content { 
+                   
+            //     display: flex;
+            //     flex-direction: column;
+            //     background-color: #0d2d3e;
+
+            //     position: absolute;
+            //     z-index: 9999;
+            //     width: 150px;
+            //     padding: 20px;
+            //     gap: 20px;
+            //     a {
+            //         color: white;
+            //       }
+            //   }
+              a {
+                color: #0d2d3e;
+                font-size: 18px;
+              }
+              .hover-content {
+                display: flex;
+                flex-direction: column;
                 background-color: #0d2d3e;
-                .container {
-                    .header-top {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        color: white;
-                        height: 60px;
-                        .box {
-                            display: flex;
-                            gap: 30px;
-                            .hour {
-                                color: #e94d65;
-                            }
-                            .social {
-                                transition: color 0.3s;
-                                transition: ease 0.3s;
-                                &:hover {
-                                    transform: scaleX(-1);
-                                    color: #ff2143;
-                                    cursor: pointer;
-                                }
-                            }
-                            #plus {
-                                font-size: 20px;
-                            }
-                            p{
-                                display: flex;
-                                align-items: center;
-                                gap: 10px;
-                            }
-                        }
-                    }
-                }
-            }
 
-            #header-bottom {
-       
-                .container {
-                  .header-bottom {
-                    display: flex;
-                    justify-content: space-between;
-                    height: 120px;
-                    align-items: center;
-
-                    nav {
-                        ul {
-                            display: flex;
-                            gap: 40px;
-                            li {
-                                a {
-                                    color: #0d2d3e;
-                                    font-size: 18px;
-                                }
-                            }
-                        }
-                    }
-                  }
+                position: absolute;
+                z-index: 9999;
+                width: 150px;
+                padding: 20px;
+                gap: 20px;
+                opacity: 0; 
+                visibility: hidden;
+                transition: opacity 0.3s ease;
+                a {
+                  color: white;
                 }
+              }
+              .hover-content.visible {
+                opacity: 1;
+                visibility: visible;
+              }
             }
-            
-    
+          }
+        }
+      }
+    }
+  }
 }

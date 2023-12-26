@@ -107,4 +107,69 @@
 #services #services-bottom .container .services-bottom .services-bottom-right a:hover {
   background-color: #f7f7f7;
   color: black;
+}
+
+#portfolio {
+  background-color: #f7f7f7;
+}
+#portfolio .container .portfolio {
+  padding: 150px 0;
+}
+#portfolio .container .portfolio .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#portfolio .container .portfolio .text h6 {
+  color: #eb566c;
+  font-size: 20px;
+}
+#portfolio .container .portfolio .text h1 {
+  color: #0d2d3e;
+  font-size: 50px;
+}
+#portfolio .container .portfolio .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+#portfolio .container .portfolio .boxes .box {
+  width: 50%;
+  position: relative;
+  height: 550px;
+}
+#portfolio .container .portfolio .boxes .box img {
+  height: 400px;
+}
+#portfolio .container .portfolio .boxes .box div {
+  background-color: white;
+  width: 80%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  z-index: 9999;
+  gap: 20px;
+}
+#portfolio .container .portfolio .boxes .box div p:nth-child(1) {
+  color: #eb566c;
+  position: relative;
+  width: 55%;
+  text-align: center;
+}
+#portfolio .container .portfolio .boxes .box div p:nth-child(1):nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 35px;
+  height: 3px;
+  background-color: #eb566c;
+}
+#portfolio .container .portfolio .boxes .box div p:nth-child(2) {
+  color: #0d2d3e;
+  font-size: 22px;
 }/*# sourceMappingURL=index.css.map */

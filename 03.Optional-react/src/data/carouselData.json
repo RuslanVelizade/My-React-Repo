@@ -1,0 +1,25 @@
+{
+    "slides": [
+        {    
+            "title": "First",
+            "h6": "COMMITED TO SUCCESS",
+            "h1": "We help to grow your businnes",
+            "span": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repudiandae suscipit porro tempora, sed quisquam molestias",
+            "a": "OUR SERVICES"
+        },
+        {
+            "title": "Second",
+            "h6": "COMMITED TO SUCCESS",
+            "h1": "We help to grow your businnes",
+            "span": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repudiandae suscipit porro tempora, sed quisquam molestias",
+            "a": "OUR SERVICES"
+        },
+        {
+            "title": "Third",
+            "h6": "COMMITED TO SUCCESS",
+            "h1": "We help to grow your businnes",
+            "span": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repudiandae suscipit porro tempora, sed quisquam molestias",
+            "a": "OUR SERVICES"
+        }
+    ]
+}

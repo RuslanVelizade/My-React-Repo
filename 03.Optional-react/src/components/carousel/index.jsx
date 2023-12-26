@@ -1,34 +1,48 @@
-// import Carousel from 'react-bootstrap/Carousel';
-// import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import React, { useState } from 'react';
+import "./index.scss"
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+const Carousel = ({data}) => {
+    
+    const [slide, setSlide] = useState(0);
 
-// function HomeCarousel() {
-//   return (
-//     <Carousel>
-//       <Carousel.Item>
-//         <ExampleCarouselImage text="First slide" />
-//         <Carousel.Caption>
-//           <h3>First slide label</h3>
-//           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <ExampleCarouselImage text="Second slide" />
-//         <Carousel.Caption>
-//           <h3>Second slide label</h3>
-//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <ExampleCarouselImage text="Third slide" />
-//         <Carousel.Caption>
-//           <h3>Third slide label</h3>
-//           <p>
-//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//           </p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-// }
+  const nextSlide = () => {
+    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+  };
 
-// export default HomeCarousel;
+  const prevSlide = () => {
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+  };
+  return (
+    <div className='carousel'>
+        <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+        {data.map((item, index)=> (
+        <div key={item.index} className={slide === index ? "slide" : "slide slide-hidden"}>
+            <p>{item.title}</p>
+            <h6 >{item.h6} </h6>
+        <h1>{item.h1}</h1>
+       <span>{item.span}</span>
+       <a>{item.a}</a>
+        </div>
+    ))}
+    <BsArrowRightCircleFill
+        onClick={nextSlide}
+        className="arrow arrow-right"
+      />
+      <span className="indicators">
+        {data.map((_, index) => {
+          return (
+            <button
+              key={index}
+              className={
+                slide === index ? "indicator" : "indicator indicator-inactive"
+              }
+              onClick={() => setSlide(index)}
+            ></button>
+          );
+        })}
+      </span>
+    </div>
+  )
+}
+
+export default Carousel
